@@ -94,7 +94,7 @@ body {
     transform: scaleX(1);
 }
 
-#navBar > img {
+#navBar > a > img {
     width: 80px;
     height: 80px;
     font-weight: bold;
