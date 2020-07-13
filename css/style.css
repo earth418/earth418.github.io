@@ -186,17 +186,17 @@ body {
     padding-bottom: 20px;
 }
 
-#galleryPics {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#galleryImages {
     max-width: 1000px;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    align-items: center;
 }
 
-#galleryPics > img {
+#galleryImages > img {
     width: 100%;
-    max-width: 485px;
     border-radius: 3px;
     border: 1px solid #000000;
     margin: 5px 0;
