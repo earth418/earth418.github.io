@@ -31,16 +31,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-#home {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/main.png");
-    position: relative;
-}
-
 #navBarContainer {
     background: rgba(12, 13, 29, 0.75);
     box-shadow: 0 0 1rem rgba(23, 20, 47, 0.5);
@@ -98,6 +88,16 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+}
+
+#home {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/main.png");
+    position: relative;
 }
 
 #homeTitle {
