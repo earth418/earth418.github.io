@@ -14,12 +14,15 @@ textarea {
     outline: none;
     border: none;
     font-family: 'Open Sans', sans-serif;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
 }
 
 html,
 body {
     height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -45,6 +48,7 @@ body {
     top: 0;
     width: 100%;
     position: fixed;
+    z-index: 2;
 }
 
 #navBar {
@@ -55,23 +59,25 @@ body {
     justify-content: space-around;
     align-items: center;
     align-self: center;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-#navBar a {
+#navBar > a {
     text-transform: uppercase;
     font-size: 20px;
     color: white;
+    width: 86px;
+    text-align: center;
 }
 
 @media(max-width: 750px) {
-    #navBar a {
+    #navBar > a {
         display: none;
     }
 }
 
-#navBar a:before {
+#navBar > a:before {
     content: "";
     position: relative;
     width: 100%;
@@ -83,12 +89,12 @@ body {
     transition: all 0.3s ease-in-out 0s;
 }
 
-#navBar a:hover:before {
+#navBar > a:hover:before {
     visibility: visible;
     transform: scaleX(1);
 }
 
-#navBar img {
+#navBar > img {
     width: 80px;
     height: 80px;
     font-weight: bold;
@@ -117,7 +123,7 @@ body {
     }
 }
 
-#homeTitle img {
+#homeTitle > img {
     width: 90%;
     height: auto;
     max-width: 650px;
@@ -136,7 +142,7 @@ body {
     flex-wrap: wrap;
 }
 
-#downloadLinks a {
+#downloadLinks > a {
     width: 200px;
     height: 50px;
     border: 1px solid white;
@@ -153,6 +159,10 @@ body {
     color: white;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+#downloadLinks > a > span {
+    margin-left: 10px;
 }
 
 @media(max-width: 750px) {
@@ -188,7 +198,7 @@ body {
     margin: auto;
 }
 
-#GalleryPics img {
+#GalleryPics > img {
     width: 100%;
     max-width: 485px;
     border-radius: 3px;
