@@ -149,6 +149,7 @@ body {
     text-transform: uppercase;
 }
 
+#downloadLinks > a > span {
     margin-left: 10px;
 }
 
