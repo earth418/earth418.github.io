@@ -62,7 +62,7 @@ body {
     position: relative;
 }
 
-#navBar > a:before {
+#navBar > a:before:not([href="index.html"]) {
     content: "";
     position: absolute;
     width: 100%;
@@ -74,7 +74,7 @@ body {
     transition: 0.3s;
 }
 
-#navBar > a:hover:before {
+#navBar > a:hover:before:not([href="index.html"]) {
     transform: scaleX(1);
 }
 
