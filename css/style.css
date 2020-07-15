@@ -209,7 +209,7 @@ About Section
 
 @media(max-width: 750px) {
     #aboutContent {
-        font-size: 18px;
+        font-size: 16px;
         margin: 0 20px;
     }
 }
