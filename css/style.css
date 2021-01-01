@@ -207,6 +207,15 @@ About Section
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
 }
 
+#Nametag {
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
 @media(max-width: 750px) {
     #aboutContent {
         font-size: 16px;
